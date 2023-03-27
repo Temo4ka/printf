@@ -338,8 +338,6 @@ default_printf:
 jmp continue
 ;-------------------------------------------------
 
-;---------------------------------------------------------------------------------------------
-;    					        %a			     %b               %c               %d
 JumpTable        dd offset default_printf, offset B_printf, offset C_printf, offset D_printf, 
 				  10 dup(offset default_printf), offset O_printf, 3 dup(offset default_printf),  
 				offset S_printf, 4 dup(offset default_printf), X_printf, 2 dup(offset default_printf)
